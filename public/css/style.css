@@ -193,8 +193,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
+.intro_mobile {
+	display: table;
+	height: 100%;
+	padding: 0;
+	background: url(../img/intro-mobile-black.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
+}
+.intro_mobile .overlay {
+	background: rgba(0,0,0,0.2);
+	height: 100%;
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
@@ -205,7 +220,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 0;
 	margin-bottom: 10px;
 }
+.intro_mobile h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
 .intro h1 span {
+	font-weight: 800;
+	color: #5ca9fb;
+}
+.intro_mobile h1 span {
 	font-weight: 800;
 	color: #5ca9fb;
 }
@@ -217,9 +245,22 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 0 auto;
 	margin-bottom: 60px;
 }
+.intro_mobile p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 200;
+	/* line-height: 20px; */
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
 header .intro-text {
 	padding-top: 350px;
 	padding-bottom: 200px;
+	text-align: center;
+}
+header .intro-text-mobile {
+	padding-top: 40%;
+	padding-bottom: 30%;
 	text-align: center;
 }
 /* Features Section */
@@ -341,6 +382,8 @@ header .intro-text {
 	overflow: hidden;
 	position: relative;
 	margin: 0;
+	cursor: pointer;
+	/* background: linear-gradient(to right, rgba(99,114,255,0.8) 0%, rgba(92,169,251,0.8) 100%); */
 }
 .hover-bg .hover-text {
 	position: absolute;

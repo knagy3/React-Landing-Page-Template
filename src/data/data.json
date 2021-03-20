@@ -1,7 +1,7 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
+        "title": "I am a business page",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
 
     },
@@ -105,10 +105,10 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
+        "address": "1149 Handzsar St 2, Budapest",
+        "phone": "+36 70 672 ....",
+        "email": "nagykristofwebdev@gmail.com",
+        "facebook": "https://www.facebook.com/kristof.nagy.14203/",
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },

@@ -1,11 +1,17 @@
+import { useMediaQuery } from 'react-responsive';
+
 export const Header = (props) => {
+  const isTabletOrMobile = useMediaQuery({ query: `(max-width: 850px)` });
   return (
     <header id='header'>
-      <div className='intro'>
+      <div className={!isTabletOrMobile ? 'intro' : 'intro_mobile'}>
         <div className='overlay'>
           <div className='container'>
             <div className='row'>
-              <div className='col-md-8 col-md-offset-2 intro-text'>
+              <div className={!isTabletOrMobile 
+                ? 'col-md-8 col-md-offset-2 intro-text' 
+                : 'col-md-8 col-md-offset-2 intro-text-mobile'}
+              >
                 <h1>
                   {props.data ? props.data.title : 'Loading'}
                   <span></span>
